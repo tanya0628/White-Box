@@ -37,3 +37,167 @@ document.querySelectorAll(".dropdown > a").forEach(item => {
     });
 
 });
+/* ==============================
+       ABOUT SCROLL ANIMATION
+============================== */
+
+const aboutSection = document.querySelector(".about-section");
+
+if (aboutSection) {
+
+    const aboutObserver = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("about-visible");
+
+                    aboutObserver.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    aboutObserver.observe(aboutSection);
+}
+/* =================================
+      WELCOME SCROLL ANIMATION
+================================= */
+
+const welcomeSection = document.querySelector(".welcome-section");
+
+if (welcomeSection) {
+
+    const welcomeObserver = new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("welcome-visible");
+
+                    welcomeObserver.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.15
+        }
+
+    );
+
+    welcomeObserver.observe(welcomeSection);
+
+}
+
+/* =========================================
+        SERVICES ANIMATION
+========================================= */
+
+const servicesSection =
+    document.querySelector(".services-section");
+
+if (servicesSection) {
+
+    const servicesObserver =
+        new IntersectionObserver(
+
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "services-visible"
+                        );
+
+                        servicesObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.12
+            }
+
+        );
+
+
+    servicesObserver.observe(servicesSection);
+
+}
+
+
+/* =========================================
+        VIEW DETAILS
+========================================= */
+
+const serviceButtons =
+    document.querySelectorAll(".service-more");
+
+
+serviceButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        const card =
+            button.closest(".service-card");
+
+        card.classList.toggle("show-details");
+
+
+        const icon =
+            button.querySelector("i");
+
+
+        if (card.classList.contains("show-details")) {
+
+            button.firstChild.textContent =
+                " Hide Details ";
+
+            icon.classList.remove(
+                "fa-arrow-right"
+            );
+
+            icon.classList.add(
+                "fa-chevron-up"
+            );
+
+        } else {
+
+            button.firstChild.textContent =
+                " View Details ";
+
+            icon.classList.remove(
+                "fa-chevron-up"
+            );
+
+            icon.classList.add(
+                "fa-arrow-right"
+            );
+
+        }
+
+    });
+
+});

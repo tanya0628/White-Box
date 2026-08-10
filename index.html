@@ -1,79 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>wblc</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
-<nav class="navbar">
-
-    <div class="brand">
-
-        <img src="logo.png" class="logo1" alt="logo">
+  <body>
+    <nav class="navbar">
+      <div class="brand">
+        <img src="logo.png" class="logo1" alt="logo" />
 
         <a href="#" class="logo">
           WHITE
-            <span>BOX</span>
+          <span>BOX</span>
         </a>
+      </div>
 
-    </div>
-
-    <ul class="nav-links">
-
+      <ul class="nav-links">
         <li><a href="#">Home</a></li>
 
-       
-
         <li><a href="#welcome">Welcome</a></li>
-         <li><a href="#about">About</a></li>
+        <li><a href="#about">About</a></li>
 
         <li class="dropdown">
+          <a href="#">
+            Group Of Services
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
 
-            <a href="#">
-                Group Of Companies
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-
-            <ul class="dropdown-menu">
-
-                <li><a href="#">NFS GEMS & JEWELLERY</a></li>
-                <li><a href="film.html">NFS FILM PRODUCTION</a></li>
-                <li><a href="decor.html">ASF DECOR RENOVATION</a></li>
-                <li><a href="permit.html">CANADA WORK PERMIT</a></li>
-                <li><a href="stone.html">PRECIOUS STONE</a></li>
-                <li><a href="finance.html">NFC FINANCE</a></li>
-                <li><a href="wenture.html">JOINT VENTURE</a></li>
-
-            </ul>
-
+          <ul class="dropdown-menu">
+            <li><a href="#services">Business Services</a></li>
+            <li><a href="#services">Tax Services</a></li>
+            <li><a href="#services">Licensing Services</a></li>
+            <li><a href="#services">Compliance Services</a></li>
+            <li><a href="#services">Other Professional Services</a></li>
+          </ul>
         </li>
 
         <li class="dropdown">
+          <a href="#">
+            Gallery
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
 
-            <a href="#">
-                Gallery
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-
-            <ul class="dropdown-menu">
-
-                <li><a href="#gallery">Photos</a></li>
-                <li><a href="#podcasts">Podcasts</a></li>
-
-            </ul>
-
+          <ul class="dropdown-menu">
+            <li><a href="#gallery">Photos</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
+          </ul>
         </li>
 
         <!-- <li><a href="#shop">Shop</a></li> -->
@@ -85,774 +67,1065 @@
         <li><a href="#contact">Contact</a></li>
 
         <li>
-            <a href="#contact" class="nav-btn">Get Started</a>
+          <a href="#contact" class="nav-btn">Get Started</a>
         </li>
+      </ul>
 
-    </ul>
-
-    <div class="menu-btn">
-
+      <div class="menu-btn">
         <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <!--================ HERO SECTION ================-->
 
-    </div>
+    <section class="hero">
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="herovid.mp4" type="video/mp4" />
+      </video>
 
-</nav>
-<!--================ HERO SECTION ================-->
+      <!-- Dark Overlay -->
+      <div class="hero-overlay"></div>
 
-<section class="hero">
-
-    <!-- Background Video -->
-    <video autoplay muted loop playsinline class="hero-video">
-        <source src="herovid.mp4" type="video/mp4">
-    </video>
-
-    <!-- Dark Overlay -->
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <span class="hero-tag">
-            WE MAKE COMPLIANCE SIMPLE
-        </span>
+      <div class="hero-content">
+        <span class="hero-tag"> WE MAKE COMPLIANCE SIMPLE </span>
 
         <h1>
-            Legal Solutions for
-            <span>Your Business</span>
+          Legal Solutions for
+          <span>Your Business</span>
         </h1>
 
         <p>
-            Business Registration, GST, FSSAI, ISO Certification,
-            IEC Registration and complete legal consultancy under one roof.
+          Business Registration, GST, FSSAI, ISO Certification, IEC Registration
+          and complete legal consultancy under one roof.
         </p>
 
         <div class="hero-buttons">
+          <a href="#contact" class="btn-primary"> Get Consultation </a>
 
-            <a href="#contact" class="btn-primary">
-                Get Consultation
-            </a>
-
-            <a href="#services" class="btn-secondary">
-                Our Services
-            </a>
-
+          <a href="#services" class="btn-secondary"> Our Services </a>
         </div>
+      </div>
+    </section>
+    <!-- Floating Buttons -->
 
+    <div class="floating-buttons">
+      <!-- Call -->
+
+      <a href="tel:+919355600331" class="call-btn" title="Call Now">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+
+      <!-- WhatsApp -->
+
+      <a
+        href="https://wa.me/919355600331"
+        target="_blank"
+        class="whatsapp-btn"
+        title="WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
     </div>
 
-</section>
-<!-- Floating Buttons -->
-
-<div class="floating-buttons">
-
-    <!-- Call -->
-
-    <a href="tel:+919355600331" class="call-btn" title="Call Now">
-        <i class="fa-solid fa-phone"></i>
-    </a>
-
-    <!-- WhatsApp -->
-
-    <a href="https://wa.me/919355600331" target="_blank" class="whatsapp-btn" title="WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-</div>
-
-<!-- =================================
+    <!-- =================================
         WELCOME SECTION
 ================================= -->
 
-<section class="welcome-section" id="welcome">
+    <section class="welcome-section" id="welcome">
+      <div class="welcome-bg-shape shape-one"></div>
+      <div class="welcome-bg-shape shape-two"></div>
 
-    <div class="welcome-bg-shape shape-one"></div>
-    <div class="welcome-bg-shape shape-two"></div>
-
-    <div class="welcome-container">
-
+      <div class="welcome-container">
         <!-- IMAGE SIDE -->
 
         <div class="welcome-image-area">
+          <div class="welcome-image-frame">
+            <img src="welcome.png" alt="Whitebox Legal Consultancy" />
+          </div>
 
-            <div class="welcome-image-frame">
+          <!-- Experience Badge -->
 
-                <img 
-                    src="welcome.png" 
-                    alt="Whitebox Legal Consultancy"
-                >
+          <div class="welcome-badge">
+            <i class="fa-solid fa-scale-balanced"></i>
 
+            <div>
+              <strong>Trusted</strong>
+              <span>Legal Support</span>
             </div>
-
-            <!-- Experience Badge -->
-
-            <div class="welcome-badge">
-
-                <i class="fa-solid fa-scale-balanced"></i>
-
-                <div>
-                    <strong>Trusted</strong>
-                    <span>Legal Support</span>
-                </div>
-
-            </div>
-
+          </div>
         </div>
-
 
         <!-- CONTENT SIDE -->
 
         <div class="welcome-content">
+          <span class="welcome-label"> WELCOME MESSAGE </span>
 
-            <span class="welcome-label">
-                WELCOME MESSAGE
-            </span>
+          <h2>
+            Your Success Begins With
+            <span>Right Guidance</span>
+          </h2>
 
-            <h2>
-                Your Success Begins With
-                <span>Right Guidance</span>
-            </h2>
+          <div class="welcome-line"></div>
 
-            <div class="welcome-line"></div>
+          <p class="welcome-intro">
+            Welcome to
+            <strong>Whitebox Legal Consultancy Private Limited.</strong> We are
+            delighted to have you with us.
+          </p>
 
-            <p class="welcome-intro">
+          <p>
+            At Whitebox, we are committed to providing reliable, efficient and
+            result-oriented legal and business consultancy services. Our mission
+            is to simplify complex processes and empower businesses to grow with
+            confidence and compliance.
+          </p>
 
-                Welcome to <strong>Whitebox Legal Consultancy
-                Private Limited.</strong> We are delighted to have
-                you with us.
+          <p>
+            With a team of experienced professionals and a client-first
+            approach, we ensure that you receive the right guidance and support
+            at every step.
+          </p>
 
-            </p>
+          <p class="welcome-thanks">
+            Thank you for choosing us as your trusted legal partner.
+          </p>
 
-            <p>
+          <!-- COMMITMENT CARD -->
 
-                At Whitebox, we are committed to providing reliable,
-                efficient and result-oriented legal and business
-                consultancy services. Our mission is to simplify
-                complex processes and empower businesses to grow
-                with confidence and compliance.
-
-            </p>
-
-            <p>
-
-                With a team of experienced professionals and a
-                client-first approach, we ensure that you receive
-                the right guidance and support at every step.
-
-            </p>
-
-            <p class="welcome-thanks">
-
-                Thank you for choosing us as your trusted legal partner.
-
-            </p>
-
-
-            <!-- COMMITMENT CARD -->
-
-            <div class="commitment-card">
-
-                <div class="commitment-icon">
-
-                    <i class="fa-solid fa-handshake"></i>
-
-                </div>
-
-                <div class="commitment-content">
-
-                    <span>OUR COMMITMENT</span>
-
-                    <h3>
-                        Your Compliance.
-                        <strong>Our Responsibility.</strong>
-                    </h3>
-
-                    <p>
-                        Reliable solutions, professional guidance
-                        and complete support for your business.
-                    </p>
-
-                </div>
-
+          <div class="commitment-card">
+            <div class="commitment-icon">
+              <i class="fa-solid fa-handshake"></i>
             </div>
 
+            <div class="commitment-content">
+              <span>OUR COMMITMENT</span>
 
-            <!-- BUTTON -->
+              <h3>
+                Your Compliance.
+                <strong>Our Responsibility.</strong>
+              </h3>
 
-            <a href="#contact" class="welcome-btn">
+              <p>
+                Reliable solutions, professional guidance and complete support
+                for your business.
+              </p>
+            </div>
+          </div>
 
-                Talk To Our Experts
+          <!-- BUTTON -->
 
-                <i class="fa-solid fa-arrow-right"></i>
+          <a href="#contact" class="welcome-btn">
+            Talk To Our Experts
 
-            </a>
-
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- =========================
+    <!-- =========================
         ABOUT SECTION
 ========================= -->
 
-<section class="about-section" id="about">
-
-    <div class="about-container">
-
+    <section class="about-section" id="about">
+      <div class="about-container">
         <!-- IMAGE SIDE -->
-       
 
         <!-- CONTENT SIDE -->
         <div class="about-content">
+          <span class="section-label"> ABOUT US </span>
 
-            <span class="section-label">
-                ABOUT US
-            </span>
+          <h2>
+            Your Trusted Partner for
+            <span>Business & Compliance</span>
+          </h2>
 
-            <h2>
-                Your Trusted Partner for
-                <span>Business & Compliance</span>
-            </h2>
+          <p class="about-intro">
+            Whitebox Legal Consultancy Private Limited is a trusted legal and
+            business consulting firm providing reliable compliance and
+            documentation solutions for businesses across India.
+          </p>
 
-            <p class="about-intro">
-                Whitebox Legal Consultancy Private Limited is a trusted
-                legal and business consulting firm providing reliable
-                compliance and documentation solutions for businesses
-                across India.
-            </p>
+          <p>
+            From registrations and licenses to tax compliance, certifications
+            and legal documentation, our experienced professionals provide
+            accurate, timely and hassle-free solutions under one roof.
+          </p>
 
-            <p>
-                From registrations and licenses to tax compliance,
-                certifications and legal documentation, our experienced
-                professionals provide accurate, timely and hassle-free
-                solutions under one roof.
-            </p>
+          <!-- HIGHLIGHTS -->
 
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <i class="fa-solid fa-circle-check"></i>
 
-            <!-- HIGHLIGHTS -->
-
-            <div class="about-highlights">
-
-                <div class="about-highlight">
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    <div>
-                        <h4>Expert Professionals</h4>
-                        <p>Experienced compliance specialists</p>
-                    </div>
-                </div>
-
-
-                <div class="about-highlight">
-                    <i class="fa-solid fa-shield-halved"></i>
-
-                    <div>
-                        <h4>100% Compliance</h4>
-                        <p>Reliable and legally compliant solutions</p>
-                    </div>
-                </div>
-
+              <div>
+                <h4>Expert Professionals</h4>
+                <p>Experienced compliance specialists</p>
+              </div>
             </div>
 
+            <div class="about-highlight">
+              <i class="fa-solid fa-shield-halved"></i>
 
-            <!-- VALUE -->
+              <div>
+                <h4>100% Compliance</h4>
+                <p>Reliable and legally compliant solutions</p>
+              </div>
+            </div>
+          </div>
 
-            <div class="about-value">
+          <!-- VALUE -->
 
-                <h3>OUR VALUES</h3>
+          <div class="about-value">
+            <h3>OUR VALUES</h3>
 
-                <div class="value-grid">
-
-                    <div class="value-card">
-
-                        <div class="value-icon">
-                            <i class="fa-solid fa-user-tie"></i>
-                        </div>
-
-                        <span>Professionalism</span>
-
-                    </div>
-
-
-                    <div class="value-card">
-
-                        <div class="value-icon">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-
-                        <span>Transparency</span>
-
-                    </div>
-
-
-                    <div class="value-card">
-
-                        <div class="value-icon">
-                            <i class="fa-solid fa-handshake"></i>
-                        </div>
-
-                        <span>Commitment</span>
-
-                    </div>
-
-
-                    <div class="value-card">
-
-                        <div class="value-icon">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <span>Client Satisfaction</span>
-
-                    </div>
-
+            <div class="value-grid">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fa-solid fa-user-tie"></i>
                 </div>
 
+                <span>Professionalism</span>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+
+                <span>Transparency</span>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+
+                <span>Commitment</span>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <span>Client Satisfaction</span>
+              </div>
             </div>
+          </div>
 
-
-            <a href="#services" class="about-btn">
-                Discover Our Services
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+          <a href="#services" class="about-btn">
+            Discover Our Services
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
 
-         <div class="about-image-wrapper">
+        <div class="about-image-wrapper">
+          <div class="about-image-border"></div>
 
-            <div class="about-image-border"></div>
+          <div class="about-image">
+            <img
+              src="about-office.png"
+              alt="Whitebox Legal Consultancy Office"
+            />
+          </div>
 
-            <div class="about-image">
-                <img src="about-office.png" alt="Whitebox Legal Consultancy Office">
-            </div>
-
-            <div class="about-experience">
-                <strong>15+</strong>
-                <span>Years of<br>Experience</span>
-            </div>
-
+          <div class="about-experience">
+            <strong>15+</strong>
+            <span>Years of<br />Experience</span>
+          </div>
         </div>
-
-    </div>
-
-</section>
-<!-- =========================================
+      </div>
+    </section>
+    <!-- =========================================
         OUR GROUP OF SERVICES
 ========================================= -->
 
-<section class="services-section" id="services">
+    <section class="services-section" id="services">
+      <!-- Background Decorations -->
+      <div class="service-bg-circle circle-one"></div>
+      <div class="service-bg-circle circle-two"></div>
 
-    <!-- Background Decorations -->
-    <div class="service-bg-circle circle-one"></div>
-    <div class="service-bg-circle circle-two"></div>
-
-    <div class="services-container">
-
+      <div class="services-container">
         <!-- SECTION HEADING -->
 
         <div class="services-heading">
+          <span class="services-label"> WHAT WE OFFER </span>
 
-            <span class="services-label">
-                WHAT WE OFFER
-            </span>
+          <h2>
+            Our Group of
+            <span>Professional Services</span>
+          </h2>
 
-            <h2>
-                Our Group of
-                <span>Professional Services</span>
-            </h2>
-
-            <p>
-                From business registration to tax, licensing and legal
-                compliance, Whitebox provides reliable solutions to
-                simplify your business journey under one roof.
-            </p>
-
+          <p>
+            From business registration to tax, licensing and legal compliance,
+            Whitebox provides reliable solutions to simplify your business
+            journey under one roof.
+          </p>
         </div>
-
 
         <!-- SERVICES GRID -->
 
         <div class="services-grid">
-
-
-            <!-- =================================
+          <!-- =================================
                     BUSINESS SERVICES
             ================================= -->
 
-            <div class="service-card">
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon">
+                <i class="fa-solid fa-building"></i>
+              </div>
 
-                <div class="service-top">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-
-                    <span class="service-number">01</span>
-
-                </div>
-
-                <h3>Business Services</h3>
-
-                <p class="service-description">
-                    Start, register and structure your business with
-                    professional guidance and complete documentation
-                    support.
-                </p>
-
-                <div class="service-list">
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Company Registration
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        LLP Registration
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Partnership Firm
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        MSME Registration
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Startup Registration
-                    </div>
-
-                </div>
-
-                <button class="service-more">
-                    View Details
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <div class="service-extra">
-
-                    <p>
-                        We help entrepreneurs choose the right business
-                        structure and complete the necessary registration
-                        process with proper documentation and guidance.
-                    </p>
-
-                </div>
-
+              <span class="service-number">01</span>
             </div>
 
+            <h3>Business Services</h3>
 
+            <p class="service-description">
+              Start, register and structure your business with professional
+              guidance and complete documentation support.
+            </p>
 
-            <!-- =================================
+            <div class="service-list">
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Company Registration
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                LLP Registration
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Partnership Firm
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                MSME Registration
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Startup Registration
+              </div>
+            </div>
+
+            <button class="service-more">
+              View Details
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="service-extra">
+              <p>
+                We help entrepreneurs choose the right business structure and
+                complete the necessary registration process with proper
+                documentation and guidance.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================
                     TAX SERVICES
             ================================= -->
 
-            <div class="service-card">
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </div>
 
-                <div class="service-top">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-                    </div>
-
-                    <span class="service-number">02</span>
-
-                </div>
-
-                <h3>Tax Services</h3>
-
-                <p class="service-description">
-                    Manage your business taxation and GST requirements
-                    accurately with professional compliance support.
-                </p>
-
-                <div class="service-list">
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        GST Registration
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        GST Return Filing
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Income Tax Filing
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        PAN / TAN
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Professional Tax
-                    </div>
-
-                </div>
-
-                <button class="service-more">
-                    View Details
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <div class="service-extra">
-
-                    <p>
-                        Our tax services help businesses maintain accurate
-                        records, complete statutory filings and stay updated
-                        with applicable tax requirements.
-                    </p>
-
-                </div>
-
+              <span class="service-number">02</span>
             </div>
 
+            <h3>Tax Services</h3>
 
+            <p class="service-description">
+              Manage your business taxation and GST requirements accurately with
+              professional compliance support.
+            </p>
 
-            <!-- =================================
+            <div class="service-list">
+              <div>
+                <i class="fa-solid fa-check"></i>
+                GST Registration
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                GST Return Filing
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Income Tax Filing
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                PAN / TAN
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Professional Tax
+              </div>
+            </div>
+
+            <button class="service-more">
+              View Details
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="service-extra">
+              <p>
+                Our tax services help businesses maintain accurate records,
+                complete statutory filings and stay updated with applicable tax
+                requirements.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================
                     LICENSING
             ================================= -->
 
-            <div class="service-card featured-service">
+          <div class="service-card featured-service">
+            <div class="popular-badge">POPULAR</div>
 
-                <div class="popular-badge">
-                    POPULAR
-                </div>
+            <div class="service-top">
+              <div class="service-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
 
-                <div class="service-top">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-certificate"></i>
-                    </div>
-
-                    <span class="service-number">03</span>
-
-                </div>
-
-                <h3>Licensing Services</h3>
-
-                <p class="service-description">
-                    Obtain essential business licenses and certifications
-                    required to legally operate and grow your business.
-                </p>
-
-                <div class="service-list">
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        FSSAI License
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        ISO Certification
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        IEC Code
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Factory License
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Trade License
-                    </div>
-
-                </div>
-
-                <button class="service-more">
-                    View Details
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <div class="service-extra">
-
-                    <p>
-                        From food safety and quality certifications to
-                        trade and factory permissions, we assist with
-                        documentation and application processes.
-                    </p>
-
-                </div>
-
+              <span class="service-number">03</span>
             </div>
 
+            <h3>Licensing Services</h3>
 
+            <p class="service-description">
+              Obtain essential business licenses and certifications required to
+              legally operate and grow your business.
+            </p>
 
-            <!-- =================================
+            <div class="service-list">
+              <div>
+                <i class="fa-solid fa-check"></i>
+                FSSAI License
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                ISO Certification
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                IEC Code
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Factory License
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Trade License
+              </div>
+            </div>
+
+            <button class="service-more">
+              View Details
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="service-extra">
+              <p>
+                From food safety and quality certifications to trade and factory
+                permissions, we assist with documentation and application
+                processes.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================
                     COMPLIANCE
             ================================= -->
 
-            <div class="service-card">
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
 
-                <div class="service-top">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-
-                    <span class="service-number">04</span>
-
-                </div>
-
-                <h3>Compliance Services</h3>
-
-                <p class="service-description">
-                    Stay legally compliant with timely filings,
-                    documentation and ongoing business compliance support.
-                </p>
-
-                <div class="service-list">
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        ROC Filing
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        DIN Services
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        DSC Services
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Annual Filing
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Legal Drafting
-                    </div>
-
-                </div>
-
-                <button class="service-more">
-                    View Details
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <div class="service-extra">
-
-                    <p>
-                        We help companies maintain their statutory
-                        responsibilities through regular filings,
-                        digital signatures and legal documentation.
-                    </p>
-
-                </div>
-
+              <span class="service-number">04</span>
             </div>
 
+            <h3>Compliance Services</h3>
 
+            <p class="service-description">
+              Stay legally compliant with timely filings, documentation and
+              ongoing business compliance support.
+            </p>
 
-            <!-- =================================
+            <div class="service-list">
+              <div>
+                <i class="fa-solid fa-check"></i>
+                ROC Filing
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                DIN Services
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                DSC Services
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Annual Filing
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Legal Drafting
+              </div>
+            </div>
+
+            <button class="service-more">
+              View Details
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="service-extra">
+              <p>
+                We help companies maintain their statutory responsibilities
+                through regular filings, digital signatures and legal
+                documentation.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================
                     OTHER SERVICES
             ================================= -->
 
-            <div class="service-card">
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
 
-                <div class="service-top">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-briefcase"></i>
-                    </div>
-
-                    <span class="service-number">05</span>
-
-                </div>
-
-                <h3>Other Professional Services</h3>
-
-                <p class="service-description">
-                    Additional business support services designed to
-                    simplify your operational and documentation needs.
-                </p>
-
-                <div class="service-list">
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Project Reports
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Loan Assistance
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Trademark Registration
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Digital Signature
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-check"></i>
-                        Consultancy Services
-                    </div>
-
-                </div>
-
-                <button class="service-more">
-                    View Details
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <div class="service-extra">
-
-                    <p>
-                        Our additional services provide practical support
-                        for business planning, intellectual property,
-                        financing documentation and digital requirements.
-                    </p>
-
-                </div>
-
+              <span class="service-number">05</span>
             </div>
 
-        </div>
+            <h3>Other Professional Services</h3>
 
+            <p class="service-description">
+              Additional business support services designed to simplify your
+              operational and documentation needs.
+            </p>
+
+            <div class="service-list">
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Project Reports
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Loan Assistance
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Trademark Registration
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Digital Signature
+              </div>
+
+              <div>
+                <i class="fa-solid fa-check"></i>
+                Consultancy Services
+              </div>
+            </div>
+
+            <button class="service-more">
+              View Details
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="service-extra">
+              <p>
+                Our additional services provide practical support for business
+                planning, intellectual property, financing documentation and
+                digital requirements.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- BOTTOM CTA -->
 
         <div class="services-cta">
+          <div>
+            <span>NEED PROFESSIONAL GUIDANCE?</span>
+
+            <h3>Let's simplify your compliance journey.</h3>
+          </div>
+
+          <a href="#contact">
+            Get Consultation
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+        GALLERY SECTION
+========================================= -->
+
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-container">
+        <!-- Heading -->
+        <div class="gallery-heading">
+          <span class="gallery-label"> OUR GALLERY </span>
+
+          <h2>
+            Explore Our
+            <span>Work & Moments</span>
+          </h2>
+
+          <p>
+            Take a look at our professional work, business activities, events
+            and important moments at Whitebox Legal Consultancy.
+          </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- CARD 1 -->
+          <div class="gallery-card">
+            <img src="gallery1.jpg" alt="Whitebox Office" />
+
+            <div class="gallery-overlay">
+              <span>01</span>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <img src="gallery1.jpg" alt="Whitebox Office" />
+
+            <div class="gallery-overlay">
+              <span>02</span>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="gallery1.jpg" alt="Whitebox Office" />
+
+            <div class="gallery-overlay">
+              <span>03</span>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="gallery1.jpg" alt="Whitebox Office" />
+
+            <div class="gallery-overlay">
+              <span>04</span>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="gallery1.jpg" alt="Whitebox Office" />
+
+            <div class="gallery-overlay">
+              <span>05</span>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="gallery1.jpg" alt="Whitebox Office" />
+
+            <div class="gallery-overlay">
+              <span>06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+<!-- =========================
+        SERVICES HERO
+========================= -->
+
+<section class="services-hero">
+
+    <div class="hero-shape"></div>
+
+    <div class="services-hero-content">
+
+        <span class="section-tag">
+            WHITEBOX LEGAL CONSULTANCY
+        </span>
+
+        <h1>
+            Professional
+            <span>Business Services</span>
+        </h1>
+
+        <p>
+            Complete legal, tax, licensing and compliance solutions
+            designed to help your business grow with confidence.
+        </p>
+
+        <div class="hero-mini-stats">
 
             <div>
-
-                <span>NEED PROFESSIONAL GUIDANCE?</span>
-
-                <h3>
-                    Let's simplify your compliance journey.
-                </h3>
-
+                <strong>2500+</strong>
+                <span>Businesses Served</span>
             </div>
 
-            <a href="#contact">
-                Get Consultation
+            <div>
+                <strong>15+</strong>
+                <span>Years Experience</span>
+            </div>
+
+            <div>
+                <strong>50+</strong>
+                <span>Professional Services</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+        SERVICES
+========================= -->
+
+<section class="services-section">
+
+    <div class="section-heading">
+
+        <span>WHAT WE OFFER</span>
+
+        <h2>
+            Our <strong>Services</strong>
+        </h2>
+
+        <p>
+            From starting your business to managing compliance,
+            our experts provide complete professional assistance
+            under one roof.
+        </p>
+
+    </div>
+
+
+    <!-- FILTER BUTTONS -->
+
+    <div class="service-filter">
+
+        <button class="filter-btn active" data-filter="all">
+            All Services
+        </button>
+
+        <button class="filter-btn" data-filter="business">
+            Business
+        </button>
+
+        <button class="filter-btn" data-filter="tax">
+            Tax
+        </button>
+
+        <button class="filter-btn" data-filter="license">
+            Licensing
+        </button>
+
+        <button class="filter-btn" data-filter="compliance">
+            Compliance
+        </button>
+
+        <button class="filter-btn" data-filter="other">
+            Other Services
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+        SERVICE GRID
+    ========================= -->
+
+    <div class="services-grid">
+
+
+        <!-- BUSINESS -->
+
+        <article class="service-card" data-category="business">
+
+            <div class="card-number">01</div>
+
+            <div class="service-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <h3>Business Services</h3>
+
+            <p>
+                Complete support for establishing, registering and
+                managing your business legally.
+            </p>
+
+            <ul>
+
+                <li>Company Registration</li>
+                <li>LLP Registration</li>
+                <li>Partnership Firm Registration</li>
+                <li>Proprietorship Registration</li>
+                <li>One Person Company</li>
+                <li>Private Limited Company</li>
+                <li>Public Limited Company</li>
+                <li>Startup Registration</li>
+                <li>Business Name Registration</li>
+                <li>MSME Registration</li>
+
+            </ul>
+
+            <a href="#contact" class="service-link">
+                Get Assistance
                 <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- TAX -->
+
+        <article class="service-card" data-category="tax">
+
+            <div class="card-number">02</div>
+
+            <div class="service-icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+
+            <h3>Tax Services</h3>
+
+            <p>
+                Reliable taxation and GST solutions to keep your
+                business financially compliant.
+            </p>
+
+            <ul>
+
+                <li>GST Registration</li>
+                <li>GST Return Filing</li>
+                <li>GST Amendment</li>
+                <li>GST Cancellation</li>
+                <li>GST Refund</li>
+                <li>GST LUT Filing</li>
+                <li>Income Tax Return Filing</li>
+                <li>TDS Return Filing</li>
+                <li>TDS Registration</li>
+                <li>Professional Tax</li>
+                <li>Tax Planning & Advisory</li>
+
+            </ul>
+
+            <a href="#contact" class="service-link">
+                Get Assistance
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- LICENSING -->
+
+        <article class="service-card" data-category="license">
+
+            <div class="card-number">03</div>
+
+            <div class="service-icon">
+                <i class="fa-solid fa-certificate"></i>
+            </div>
+
+            <h3>Licensing & Registration</h3>
+
+            <p>
+                Obtain essential licenses and registrations required
+                to operate your business legally.
+            </p>
+
+            <ul>
+
+                <li>FSSAI Registration & License</li>
+                <li>Trade License</li>
+                <li>Shop & Establishment License</li>
+                <li>Import Export Code (IEC)</li>
+                <li>MSME Registration</li>
+                <li>Drug License</li>
+                <li>Trademark Registration</li>
+                <li>Trademark Renewal</li>
+                <li>Copyright Registration</li>
+                <li>ISO Certification</li>
+                <li>Factory License</li>
+                <li>Fire NOC</li>
+                <li>Pollution NOC</li>
+                <li>RERA Registration</li>
+
+            </ul>
+
+            <a href="#contact" class="service-link">
+                Get Assistance
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- COMPLIANCE -->
+
+        <article class="service-card" data-category="compliance">
+
+            <div class="card-number">04</div>
+
+            <div class="service-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>Compliance Services</h3>
+
+            <p>
+                Stay legally compliant with timely filings,
+                documentation and regulatory support.
+            </p>
+
+            <ul>
+
+                <li>ROC Compliance</li>
+                <li>Annual Filing</li>
+                <li>AOC-4 Filing</li>
+                <li>MGT-7 / MGT-7A Filing</li>
+                <li>DIN Compliance</li>
+                <li>Director KYC</li>
+                <li>Board Resolution</li>
+                <li>Annual General Meeting</li>
+                <li>Statutory Registers</li>
+                <li>Minutes Preparation</li>
+                <li>Company Audit Coordination</li>
+                <li>GST Compliance</li>
+                <li>TDS Compliance</li>
+                <li>Labour Law Compliance</li>
+                <li>Legal Documentation</li>
+
+            </ul>
+
+            <a href="#contact" class="service-link">
+                Get Assistance
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+        <!-- OTHER -->
+
+        <article class="service-card" data-category="other">
+
+            <div class="card-number">05</div>
+
+            <div class="service-icon">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+
+            <h3>Other Professional Services</h3>
+
+            <p>
+                Additional business support services designed to
+                simplify your professional and documentation needs.
+            </p>
+
+            <ul>
+
+                <li>Project Report Preparation</li>
+                <li>Business Plan</li>
+                <li>CMA Data Preparation</li>
+                <li>Loan Documentation</li>
+                <li>Digital Signature</li>
+                <li>DSC Renewal</li>
+                <li>PAN Application</li>
+                <li>TAN Application</li>
+                <li>Trademark Search</li>
+                <li>Legal Drafting</li>
+                <li>Agreement Drafting</li>
+                <li>Rent Agreement</li>
+                <li>Partnership Deed</li>
+                <li>Business Advisory</li>
+                <li>Financial Consultancy</li>
+                <li>Accounting & Bookkeeping</li>
+
+            </ul>
+
+            <a href="#contact" class="service-link">
+                Get Assistance
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+        CTA
+========================= -->
+
+<section class="services-cta">
+
+    <div class="cta-content">
+
+        <span>NEED PROFESSIONAL ASSISTANCE?</span>
+
+        <h2>
+            Let's Make Your
+            <strong>Compliance Simple.</strong>
+        </h2>
+
+        <p>
+            Talk to our experts and get the right solution
+            for your business requirements.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="tel:+919355600331" class="cta-primary">
+                <i class="fa-solid fa-phone"></i>
+                Call Now
+            </a>
+
+            <a href="https://wa.me/919355600331"
+               target="_blank"
+               class="cta-whatsapp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Us
+
             </a>
 
         </div>
@@ -860,8 +1133,9 @@
     </div>
 
 </section>
-<script src="script.js"></script>
 
-</body>
 
+
+    <script src="script.js"></script>
+  </body>
 </html>

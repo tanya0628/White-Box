@@ -201,3 +201,60 @@ serviceButtons.forEach((button) => {
     });
 
 });
+const filterButtons = document.querySelectorAll(".filter-btn");
+const serviceCards = document.querySelectorAll(".service-card");
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        /* Active button */
+
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+
+        const filter = button.dataset.filter;
+
+
+        serviceCards.forEach(card => {
+
+            const category = card.dataset.category;
+
+
+            if(filter === "all" || category === filter){
+
+                card.style.display = "block";
+
+                card.animate(
+                    [
+                        {
+                            opacity: 0,
+                            transform: "translateY(20px)"
+                        },
+                        {
+                            opacity: 1,
+                            transform: "translateY(0)"
+                        }
+                    ],
+                    {
+                        duration: 450,
+                        easing: "ease-out"
+                    }
+                );
+
+            }else{
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
